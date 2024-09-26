@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Generatore di Note casuali</title>
+<style type="text/css">
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; } 
+a:visited { color:#339; }
+p { max-width: 60em; }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style>
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = ['e2.png','f2.png','g2.png','a2.png','b2.png','c3.png', 'd3.png', 'e3.png', 'f3.png', 'g3.png', 'a3.png', 'b3.png', 'c4.png', 'd4.png', 'e4.png', 'f4.png', 'g4.png', 'a4.png', 'b4.png', 'c5.png', 'd5.png', 'e5.png', 'f5.png', 'g5.png', 'a5.png', 'b5.png'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img height="400" style="margin:0; float:left" src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+<center>  
+<h1>Generatore di note casuali</h1>
+<p>Aggiornare la pagina (CTRL+R su molti browser) per avere una nuova nota</p>
+</br>
+<style>
+      .Contenitore{
+        margin: 0px auto;
+        width: 35%;
+        height: 250px;
+      }
+    </style>
+    <div class="Contenitore">
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')</script>
+</span></div>
+<!-- or to have image linked: -->
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div style="font-size: 80%; float: none">Pagina web sviluppata da Matteo Arena</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</center>
+
+</body>
+</html>
